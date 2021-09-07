@@ -44,10 +44,16 @@ console.log(lookUpProfile(chosenName,chosenSurname))
 
 
 // FUNCTIONS
+/**
+ * This function checks inside an array's object if a given name is an existing value and the given property is a property of that name.
+ * @param name The name of the profile you want to look up.
+ * @param property The property you want to access and display.
+ * @returns The value of the chosen property.
+ */
 function lookUpProfile(name,property) {
     for (let i=0; i < myStudentsArray.length; i++) {
         if (myStudentsArray[i].name === name) {
-            return myStudentsArray[i][property]|| "The property does not exist."
+            return myStudentsArray[i][property]|| "The property does not exist." 
     } 
   } return "We couldn't find you, sorry!" 
 }
