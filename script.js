@@ -5,3 +5,45 @@
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 
+let myStudent = {
+    'nome': undefined,
+    'cognome': undefined,
+    'eta': undefined,
+} 
+
+for (let key in myStudent) {
+    console.log(myStudent[key]);
+}
+
+let myStudentsArray = [
+    {
+        'name': "Akira",
+        'surname': "Laine",
+        'age': 25,
+    },
+    {
+        'name': "Harry",
+        'surname': "Potter",
+        'age': 119,
+    },
+    {
+        'name': "Sherlock",
+        'surname': "Holmes",
+        'age': 56,
+    },
+    {
+        'name': "Kristian",
+        'surname': "Vos",
+        'age': 35,
+    },
+    {
+        'name': "Marty",
+        'surname': "McFly",
+        'age': "Immortal",
+    }
+
+]
+
+for (let i=0; i < myStudentsArray.length; i++) {
+    console.log(myStudentsArray[i].name + ' ' + myStudentsArray[i].surname);
+}
