@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
 let myStudent = {
     'nome': undefined,
